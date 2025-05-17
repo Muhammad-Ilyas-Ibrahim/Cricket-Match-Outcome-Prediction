@@ -1,6 +1,6 @@
 # Cricket Match Outcome Prediction
 
-This project consists of two tasks, completed as part of a technical test for a job application. The tasks demonstrate my ability to build a machine learning model and deploy it as a REST API using Flask. Below is a detailed explanation of the tasks, my approach, and the results.
+This project predicts the outcome of cricket matches using machine learning. It includes model training on match data and a REST API for making real-time predictions based on match situations. Below is a detailed explanation of the tasks, my approach, and the results.
 
 ---
 
@@ -113,31 +113,29 @@ pip install flask pandas scikit-learn joblib matplotlib seaborn
 
 ## How to Run
 1. **Train the Model**:
-   - Run `task1.py` to train the model and save it as `model.pkl`.
+   - Run `model_training.py` to train the model and save it as `model.pkl`.
    ```bash
-   python task1.py
+   python model_training.py
    ```
 
 2. **Run the Flask API**:
-   - Run `task2.py` to start the Flask server.
+   - Run `api.py` to start the Flask server.
    ```bash
-   python task2.py
+   python api.py
    ```
 3. **Test API**:
-   - Run `test_task2.py` using separate terminal and to test the API.
+   - Run `test_api.py` using separate terminal and to test the API.
 4. **Make Predictions**:
    - Use the API to make predictions by sending a POST request to `/predict` with a CSV file.
 
 ---
 
 ## Files and Directories
-- `task1.py`: Script to train the model.
-- `task2.py`: Flask API for making predictions.
-- `test_task2.py`: Script to test the API.
+- `model_training.py`: Script to train the model.
+- `api.py`: Flask API for making predictions.
+- `test_api.py`: Script to test the API.
 - `model.pkl`: Trained model saved by Task 1.
 - `results.csv`: Predictions saved by the API.
 - `imgs`: Have some screenshots and confusion matrix image
 ---
 
-## Conclusion
-This project demonstrates my ability to build and deploy machine learning models, as well as my proficiency in Python, Flask, and data analysis. I am confident that these skills align well with the requirements of the role, and I look forward to discussing this project further during the interview.
